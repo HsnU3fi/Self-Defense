@@ -62,25 +62,15 @@
       <div v-else>
 
         <v-btn text @click="$vuetify.goTo('#about')">
-          <span class="mr-2" style="font-weight: bold">درباره ما</span>
-        </v-btn>
-
-        <v-btn text @click="Faq()">
-          <span class="mr-2" style="font-weight: bold">سوالات متداول</span>
-        </v-btn>
-
-        <v-btn text @click="$vuetify.goTo('')">
-          <span class="mr-2" style="font-weight: bold">بلاگ</span>
+          <span class="mr-2" style="font-weight: bold">معرفی استاد</span>
         </v-btn>
 
         <v-btn text @click="$vuetify.goTo('#theme')">
-          <span class="mr-2" style="font-weight: bold">تم ها</span>
+          <span class="mr-2" style="font-weight: bold">ویدیوها</span>
         </v-btn>
-        <v-btn text @click="$vuetify.goTo('#hero')">
-          <span class="mr-2" style="font-weight: bold">خانه</span>
-        </v-btn>
-        <v-btn rounded outlined @click="Login()">
-          <span class="mr-2" style="font-weight: bold">ورود</span>
+
+        <v-btn rounded outlined @click="Faq()">
+          <span class="mr-2" style="font-weight: bold">ثبت نام</span>
         </v-btn>
 
       </div>

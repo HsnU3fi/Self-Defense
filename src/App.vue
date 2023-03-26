@@ -15,7 +15,6 @@
   url('assets/fonts/iransans/IRANSansWeb_Light.woff2') format('woff2'),
   url('assets/fonts/iransans/IRANSansWeb_Light.woff') format('woff'),
   url('assets/fonts/iransans/IRANSansWeb_Light.ttf') format('truetype');
-  font-weight: normal;
 }
 
 * {
@@ -23,5 +22,6 @@
   font-size: 15px;
   overflow: hidden;
 }
+
 
 </style>

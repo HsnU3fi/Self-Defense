@@ -7,17 +7,17 @@
         color="#171b34"
 
     >
-      <v-list>
-        <v-list-item>
-          <v-list-item-avatar>
-            <v-img src="@/assets/img/hart.png" max-width="100px"/>
-          </v-list-item-avatar>
-          <v-list-item-content>
+<!--      <v-list>-->
+<!--        <v-list-item>-->
+<!--          <v-list-item-avatar>-->
+<!--            <v-img src="@/assets/img/hart.png" max-width="100px"/>-->
+<!--          </v-list-item-avatar>-->
+<!--          <v-list-item-content>-->
 
-            <v-list-item-title style="color: white;" class="title">LoverTime</v-list-item-title>
-          </v-list-item-content>
-        </v-list-item>
-      </v-list>
+<!--            <v-list-item-title style="color: white;" class="title">LoverTime</v-list-item-title>-->
+<!--          </v-list-item-content>-->
+<!--        </v-list-item>-->
+<!--      </v-list>-->
 
       <v-divider/>
 
@@ -48,12 +48,7 @@
         dark
         class="px-15"
     >
-      <v-img src="@/assets/img/hart.png" max-width="40px"/>
 
-      <v-toolbar-title style="font-weight: bold;  font-family: 'Gruppo';font-size: 30px;">
-        LoverTime
-      </v-toolbar-title>
-      <v-spacer/>
       <v-app-bar-nav-icon
           @click.stop="drawer = !drawer"
           class="mr-4"
@@ -61,27 +56,11 @@
       />
       <div v-else>
 
-        <v-btn text @click="$vuetify.goTo('#about')">
-          <span class="mr-2" style="font-weight: bold">درباره ما</span>
-        </v-btn>
-
-        <v-btn text @click="Faq()">
-          <span class="mr-2" style="font-weight: bold">سوالات متداول</span>
-        </v-btn>
-
-        <v-btn text @click="$vuetify.goTo('')">
-          <span class="mr-2" style="font-weight: bold">بلاگ</span>
-        </v-btn>
-
-        <v-btn text @click="$vuetify.goTo('#theme')">
-          <span class="mr-2" style="font-weight: bold">تم ها</span>
-        </v-btn>
-        <v-btn text @click="Home()">
-          <span class="mr-2" style="font-weight: bold">خانه</span>
-        </v-btn>
-
-        <v-btn rounded outlined @click="$vuetify.goTo('')">
-          <span class="mr-2" style="font-weight: bold">ورود</span>
+        <v-btn left rounded outlined @click="Faq()">
+          <v-icon class="mr-2">
+            mdi-backburger
+          </v-icon>
+          <span class="mr-2" style="font-weight: bold">بازگشت</span>
         </v-btn>
 
       </div>
@@ -107,7 +86,7 @@ export default {
     drawer: null,
     isXs: false,
     items: [
-      ["mdi-account", "ورود", ""],
+      ["mdi-account", "ورود", "/Faq"],
       ["mdi-home-outline", "خانه", "#hero"],
       ["mdi-download-box-outline", "تم ها", "#download"],
       ["mdi-book", "بلاگ", "#pricing"],
@@ -124,7 +103,7 @@ export default {
       this.isXs = window.innerWidth < 850;
     },
     Faq(){
-      window.location.replace('/Faq')
+      window.location.replace('/')
     },
 
     Home(){

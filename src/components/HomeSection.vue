@@ -1,179 +1,125 @@
 <template>
-  <section id="hero">
-    <v-container  fluid id="features"  >
-      <v-row align="center" justify="center">
-            <v-carousel
-                cycle
-                height="90vh"
-                hide-delimiter-background
-                :show-arrows="true"
-            >
-              <v-carousel-item
-                  v-for="(slide, i) in slides"
-                  :key="i"
-                  :src="slide.src"
-
-              >
-
-              </v-carousel-item>
-            </v-carousel>
-
+  <section v-if="isXs"  id="res-mobile">
+    <v-container fluid>
+      <v-row style="margin-top: 120px"  align="center" justify="center">
+        <v-col cols="10">
+          <v-row  align="center" justify="center">
+            <v-col sm="4" >
+              <!--              <v-img src="@/assets/img/ill2.svg" class="d-block ml-auto mr-auto" max-width="350px" />-->
+            </v-col>
+            <v-col cols="12" sm="8" class="white--text text-right">
+              <h1 style="font-size: 18px;" class=" mb-4">آموزش دفاع شخصی و انواع هنرهای رزمی</h1>
+              <h1 class="mb-2" style="font-size: 15px;margin-top: 120px">
+                آموزش خصوصی و عمومی کراوماگا, کیک بوکسینگ, کاراته, موتای و آیکیدو در تمام سنین برای آقایان و بانوان تحت نظر  <span style="font-size:18px "> استاد امیر مرادی</span>
+              </h1>
+              <v-btn rounded outlined  @click="Faq()" large color="white" class="mt-10">
+                <v-icon class="mr-2">
+                  mdi-account-circle
+                </v-icon>
+                <h1>
+                  ثبت نام
+                </h1>
+              </v-btn>
+            </v-col>
+          </v-row >
+        </v-col>
       </v-row>
     </v-container>
-
   </section>
+  <section v-else  id="home">
+      <v-row style="margin-top: -150px;margin-right: -50px"  align="center" justify="center">
+        <v-col cols="10">
+          <v-row  align="center" justify="center">
+            <v-col sm="4" >
+              <!--              <v-img src="@/assets/img/ill2.svg" class="d-block ml-auto mr-auto" max-width="350px" />-->
+            </v-col>
+            <v-col cols="12" sm="8" class="white--text text-right">
+              <h1 style="font-size: 35px;" class=" mb-4">آموزش دفاع شخصی و انواع هنرهای رزمی</h1>
+              <h1 style="font-size: 15px">
+                آموزش خصوصی و عمومی کراوماگا, کیک بوکسینگ, کاراته, موتای و آیکیدو در تمام سنین برای آقایان و بانوان تحت نظر  <span style="font-size:20px "> استاد امیر مرادی</span>
+              </h1>
+              <v-btn rounded outlined @click="Faq()" large color="white" class="mt-10">
+                <v-icon class="mr-2">
+                  mdi-account-circle
+                </v-icon>
+                <h1>
+                  ثبت نام
+                </h1>
+              </v-btn>
+            </v-col>
+          </v-row>
+        </v-col>
+      </v-row>
+  </section>
+
 </template>
 
+<style scoped>
+#home {
+  background-image: url("~@/assets/img/box.jpg");
+  /*background-attachment: fixed;*/
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 850px
+
+}
+
+#res-mobile {
+  background-image: url("~@/assets/img/box2.jpg");
+  /*background-attachment: fixed ;*/
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 20%;
+
+}
+
+
+#home .container,
+#home .row {
+  height: 100%;
+}
+</style>
 <script>
-import img1 from '/src/assets/img/weddingrings.jpg'
-import img2 from '/src/assets/img/wed3.jpg'
-import img3 from '/src/assets/img/wed1.jpg'
 export default {
+  data: () => ({
+    drawer: null,
+    isXs: false,
+    items: [
+      ["mdi-account", "ورود", ""],
+      ["mdi-home-outline", "خانه", "#hero"],
+      ["mdi-download-box-outline", "تم ها", "#download"],
+      ["mdi-book", "بلاگ", "#pricing"],
+      ["mdi-book", "سوالات متداول", "/Faq"],
+      ["mdi-information-outline", "درباره ما", "#features"],
+    ],
+  }),
+  props: {
+    color: String,
+    flat: Boolean,
+  },
+  methods: {
+    Faq() {
+      window.location.replace('/Faq')
+    },
+    onResize() {
+      this.isXs = window.innerWidth < 599;
+    },
+  },
 
-  data() {
-    return {
-      colors: [
-        '#7B7B7B',
-        '#7B7B7B',
-        '#7B7B7B',
-        '#7B7B7B',
-        '#7B7B7B',
-      ],
-      slides: [
-        {
-          src: img1,
-        },
-        {
-          src: img2,
-        },
-        {
-          src: img3,
-        },
-      ],
-    };
-  }
-}
-</script>
-
-<style lang="scss">
-.svg-border-waves .v-image {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 3rem;
-  width: 100%;
-  overflow: hidden;
-}
-.circle {
-  stroke: white;
-  stroke-dasharray: 650;
-  stroke-dashoffset: 650;
-  -webkit-transition: all 0.5s ease-in-out;
-  opacity: 0.3;
-}
-
-.playBut {
-  /*  border: 1px solid red;*/
-  display: inline-block;
-  -webkit-transition: all 0.5s ease;
-
-  .triangle {
-    -webkit-transition: all 0.7s ease-in-out;
-    stroke-dasharray: 240;
-    stroke-dashoffset: 480;
-    stroke: white;
-    transform: translateY(0);
-  }
-
-  &:hover {
-    .triangle {
-      stroke-dashoffset: 0;
-      opacity: 1;
-      stroke: white;
-      animation: nudge 0.7s ease-in-out;
-
-      @keyframes nudge {
-        0% {
-          transform: translateX(0);
-        }
-        30% {
-          transform: translateX(-5px);
-        }
-        50% {
-          transform: translateX(5px);
-        }
-        70% {
-          transform: translateX(-2px);
-        }
-        100% {
-          transform: translateX(0);
+  watch: {
+    isXs(value) {
+      if (!value) {
+        if (this.drawer) {
+          this.drawer = false;
         }
       }
-    }
-
-    .circle {
-      stroke-dashoffset: 0;
-      opacity: 1;
-    }
-  }
-}
-</style>
-
-<style>
-.btn-play {
-  transition: 0.2s;
-}
-
-.svg-border-waves .v-image {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 3rem;
-  width: 100%;
-  overflow: hidden;
-}
-
-#hero {
-  z-index: 0;
-  background-color: #f4f7f5;
-}
-.svg-border-waves img {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  margin-bottom: -2px;
-  z-index: -1;
-}
-
-.card {
-  min-height: 400px;
-  padding: 10px;
-  transition: 0.5s ease-out;
-}
-
-.card .v-image {
-  margin-bottom: 15px;
-  transition: 0.75s;
-}
-
-.card h1 {
-  margin-bottom: 10px;
-}
-
-.zoom-efect {
-  transform: scale(1.1);
-}
-
-.up {
-  transform: translateY(-10px);
-  transition: 0.5s ease-out;
-
-}
-</style>
-
-<style>
-section {
-  position: relative;
-}
-</style>
+    },
+  },
+  mounted() {
+    this.onResize();
+    window.addEventListener("resize", this.onResize, {passive: true});
+  },
+};
+</script>

@@ -7,8 +7,8 @@
       <v-container fluid>
         <v-row style="margin-top: 30px" justify="center" align="center">
 
-        <span style="font-size:30px; font-weight: bold">
-          سوالات متداول
+        <span  style="font-size:25px; font-weight: bold;direction: rtl;margin: 30px">
+          جهت ثبت نام و چگونگی برگزاری کلاس های آموزشی از طریق راهای ارتباطی زیر با ما در ارتباط باشید
           <v-divider/>
         </span>
         </v-row>
@@ -16,20 +16,12 @@
         <v-row style="margin-top: 20px" align="center" justify="center">
           <v-col cols="12" sm="8" md="6">
             <v-card class="elevation-12">
-              <v-expansion-panels popout focusable>
-                <v-expansion-panel
-                    v-for="(myItems,i) in 4"
-                    :key="i"
-                >
-                  <v-expansion-panel-header expand-icon="mdi-menu-down">question</v-expansion-panel-header>
-                  <v-expansion-panel-content>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat.
-                  </v-expansion-panel-content>
-                </v-expansion-panel>
-              </v-expansion-panels>
+              <v-img
+                  src="@/assets/img/box.jpg"
+                  class="d-block ml-auto mr-auto"
+              >
+
+              </v-img>
 
             </v-card>
 

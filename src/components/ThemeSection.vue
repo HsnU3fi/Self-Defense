@@ -1,6 +1,6 @@
 <template>
-  <section id="theme">
-    <v-container class="fill-height" fluid>
+  <section  id="theme">
+    <v-container  class="fill-height" fluid>
       <v-row align="center" justify="center">
         <v-col
             cols="12"
@@ -12,41 +12,49 @@
           <v-hover v-slot:default="{ hover }" >
             <v-card
                 class="card"
+                height="350"
                 shaped
                 :elevation="hover ? 10 : 4"
                 :class="{ up: hover }"
             >
-              <v-img
-                  :src="feature.img"
-                  max-width="100px"
-                  height="100"
-                  style="border-radius: 200px"
-                  class="d-block ml-auto mr-auto"
-                  :class="{ 'zoom-efect': hover }"
-              >
+                <v-img
+                    :src="feature.img"
+                    max-width="100px"
+                    height="100"
+                    style="border-radius: 200px"
+                    class="d-block ml-auto mr-auto"
+                    :class="{ 'zoom-efect': hover }"
+                >
 
-              </v-img>
+                </v-img>
+              <v-row align="center" justify="center">
+                <v-col cols="10">
+                  <v-row align="center" justify="center">
+<!--                    <video  style="border-radius: 20px;margin-top: 30px" :class="{ 'zoom-efect': hover }" controls :src="feature.img" src="../assets/img/paygearvideo.mp4"></video>-->
+                  </v-row>
+                </v-col>
+              </v-row>
               <h1 class="font-weight-regular">{{ feature.title }}</h1>
               <h4 class="font-weight-regular subtitle-1">
                 {{ feature.text }}
               </h4>
-<!--              <v-card-actions>-->
-<!--                <v-row-->
-<!--                    align="center"-->
-<!--                    justify="end"-->
-<!--                >-->
-<!--                  <v-col cols="12" sm="8" md-="4">-->
-<!--                    <v-btn-->
-<!--                        text-->
-<!--                        color="deep-purple accent-4"-->
-<!--                    >-->
-<!--                      read More-->
-<!--                    </v-btn>-->
+              <v-card-actions>
+                <v-row
+                    align="center"
+                    justify="end"
+                >
+                  <v-col cols="12" sm="8" md-="4">
+                    <v-btn
+                        text
+                        color="deep-purple accent-4"
+                    >
+                      read More
+                    </v-btn>
 
-<!--                  </v-col>-->
+                  </v-col>
 
-<!--                </v-row>-->
-<!--                 </v-card-actions>-->
+                </v-row>
+                 </v-card-actions>
 
 
             </v-card>
@@ -55,6 +63,9 @@
 
       </v-row>
     </v-container>
+<!--    <div class="svg-border-waves text-white" >-->
+<!--      <v-img src="~@/assets/img/borderWavesBlue.svg"/>-->
+<!--    </div>-->
 <!--<v-col cols="14" sm="8">-->
 
 <!--</v-col>-->
@@ -91,12 +102,7 @@ export default {
           text: "se se se",
           color: "orange"
         },
-        {
-          img: require("@/assets/img/winter.jpg"),
-          title: "Theme chahar",
-          text: "chahr chahar chahar ",
-          color: "blue"
-        },
+
       ],
     };
   }

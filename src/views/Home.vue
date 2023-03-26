@@ -5,11 +5,9 @@
     <navigation :color="color" :flat="flat"/>
     <v-main class="pt-0">
       <home/>
-      <theme/>
-      <lover/>
       <about/>
-
-
+      <lover/>
+      <theme/>
     </v-main>
     <v-scale-transition>
       <v-btn

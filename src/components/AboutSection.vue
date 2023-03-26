@@ -1,64 +1,40 @@
 <template>
   <section id="about">
     <v-container fluid>
-      <v-row align="center" justify="center">
-        <v-col cols="10">
-          <v-row align="center" justify="center">
-            <v-col cols="12" md="5" class="d-none d-md-flex">
-<!--              <v-img-->
-<!--                  src="@/assets/img/turban-removebg-preview.png"-->
-<!--                  class="d-block ml-auto mr-auto"-->
-<!--                  max-width="300px"-->
-<!--              />-->
-            </v-col>
+      <v-row style="margin: 30px" justify="end" align="end">
+        <h1 style="text-align: right; font-weight: bold;font-size: 30px">استاد امیر مرادی</h1>
+      </v-row>
 
-            <v-col cols="12" md="7">
-              <h1 style="text-align: right; font-weight: bold;font-size: 30px">درباره ما</h1>
-              <h1 class=" display-1 mb-3" style="text-align: right;margin-top: 20px">
 
-              </h1>
-<!--              <v-row  align="end">-->
-<!--                <v-col cols="12" class="d-flex justify-end">-->
+      <v-row justify="center" align="center" style="margin:30px">
+        <v-img src="@/assets/img/ill2.svg" class="d-block ml-auto mr-auto" max-width="350px"/>
 
-<!--                  <p class="text-justify">-->
-<!--                    سلام سلام-->
-<!--                  ای زندگی سلام-->
-<!--                  </p>-->
-<!--                  <v-img-->
-<!--                      src="@/assets/img/logo.png"-->
-<!--                      max-width="60px"-->
-<!--                      class="mr-4"-->
-<!--                  />-->
-<!--                </v-col>-->
-<!--                <v-col cols="12" class="d-flex justify-end">-->
-
-<!--                  <p >-->
-<!--                    مستی هم درد منو دیگ دوا نمیکنه-->
-<!--                  </p>-->
-<!--                  <v-img-->
-<!--                      src="@/assets/img/logo.png"-->
-<!--                      max-width="60px"-->
-<!--                      class="mr-4"-->
-<!--                  />-->
-<!--                </v-col>-->
-<!--              </v-row>-->
-            </v-col>
-
-          </v-row>
+        <v-col cols="12" sm="8" class="black--text text-right">
+          <h1 style="font-size: 18px;direction: rtl;margin-bottom: 10px">
+            مدرس تربیت بدنی دانشگاه و دارای درجات دان5 کیگ بکسینگ wko, دان5 کاراته, دان4 ووشو, خان 11موی تای, دان3
+            آیکیدو است
+          </h1>
+          <h1 style="font-size: 15px">
+            استاد مرادی به منزله ی سوابق و تجارب طولانی مدت, تمامی رشته های فوق را مربی گری میکند
+            همچنین وی سابقه داوری در عرصه کشوری و استانی کاراته و ووشو را در رزومه خود دارد
+          </h1>
+          <h1 style="font-size: 15px">
+            او تنها مربی و مدرس سبک <a style="text-decoration: none; font-size: 20px;
+" href="https://fa.wikipedia.org/wiki/%DA%A9%D8%B1%D8%A7%D9%88_%D9%85%D8%A7%DA%AF%D8%A7" target="_blank">کراوماگا</a> در
+            ایران است
+          </h1>
         </v-col>
       </v-row>
     </v-container>
-    <div class="svg-border-waves text-white">
-      <v-img src="~@/assets/img/borderWavesBlue.svg"/>
-    </div>
+
   </section>
 </template>
 
 <style scoped>
 #about {
-  height: 500px;
   background-color: #f4f7f5;
 }
+
 .svg-border-waves .v-image {
   position: absolute;
   bottom: 0;
