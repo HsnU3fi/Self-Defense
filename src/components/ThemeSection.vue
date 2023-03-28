@@ -1,7 +1,12 @@
 <template>
   <section  id="theme">
     <v-container  class="fill-height" fluid>
+      <v-row style="margin: 30px" justify="end" align="end">
+        <h1 style="text-align: right; font-weight: bold;font-size: 30px;color: #171b34">ویدیو ها</h1>
+      </v-row>
+
       <v-row align="center" justify="center">
+
         <v-col
             cols="12"
             sm="3"
@@ -9,61 +14,20 @@
             v-for="(feature, i) in features"
             :key="i"
         >
-          <v-hover v-slot:default="{ hover }" >
-            <v-card
-                class="card"
-                height="350"
-                shaped
-                :elevation="hover ? 10 : 4"
-                :class="{ up: hover }"
-            >
-                <v-img
-                    :src="feature.img"
-                    max-width="100px"
-                    height="100"
-                    style="border-radius: 200px"
-                    class="d-block ml-auto mr-auto"
-                    :class="{ 'zoom-efect': hover }"
-                >
 
-                </v-img>
-              <v-row align="center" justify="center">
-                <v-col cols="10">
-                  <v-row align="center" justify="center">
-<!--                    <video  style="border-radius: 20px;margin-top: 30px" :class="{ 'zoom-efect': hover }" controls :src="feature.img" src="../assets/img/paygearvideo.mp4"></video>-->
-                  </v-row>
-                </v-col>
-              </v-row>
-              <h1 class="font-weight-regular">{{ feature.title }}</h1>
-              <h4 class="font-weight-regular subtitle-1">
-                {{ feature.text }}
-              </h4>
-              <v-card-actions>
-                <v-row
-                    align="center"
-                    justify="end"
-                >
-                  <v-col cols="12" sm="8" md-="4">
-                    <v-btn
-                        text
-                        color="deep-purple accent-4"
-                    >
-                      read More
-                    </v-btn>
-
-                  </v-col>
-
-                </v-row>
-                 </v-card-actions>
+                    <v-card elevation="10" rounded height="400" color="secondary">
+                      <video  style="" height="400" width="300"  controls :src="feature.img" ></video>
+                    </v-card>
 
 
-            </v-card>
-          </v-hover>
         </v-col>
 
       </v-row>
+
     </v-container>
-<!--    <div class="svg-border-waves text-white" >-->
+<!--    <div style="height: 300px"/>-->
+
+    <!--    <div class="svg-border-waves text-white" >-->
 <!--      <v-img src="~@/assets/img/borderWavesBlue.svg"/>-->
 <!--    </div>-->
 <!--<v-col cols="14" sm="8">-->
@@ -82,25 +46,29 @@
 <script>
 export default {
   data() {
+
+
     return {
+
+      colors: [
+        'green',
+        'secondary',
+        'yellow darken-4',
+
+      ],
+
+
+
+
       features: [
         {
-          img: require("@/assets/img/spring.jpg"),
-          title: "Theme yek",
-          text: "yek yek yek",
-          color:"green"
+          img: require("@/assets/img/111.mp4"),
         },
         {
-          img: require("@/assets/img/summer.jpeg"),
-          title: "Theme do",
-          text: "do do do",
-          color: "#EC0E00"
+          img: require("@/assets/img/222.mp4"),
         },
         {
-          img: require("@/assets/img/fall.jpg"),
-          title: "Theme se",
-          text: "se se se",
-          color: "orange"
+          img: require("@/assets/img/333.mp4"),
         },
 
       ],

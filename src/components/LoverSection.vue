@@ -12,7 +12,7 @@
 
 <style scoped>
 #download {
-  background-image: url("~@/assets/img/box3.jpg");
+  background-image: url("~@/assets/img/boxm.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;

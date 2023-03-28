@@ -21,25 +21,7 @@
 
       <v-divider/>
 
-      <v-list>
-        <v-list-item
-            style="color: white"
-            v-for="([icon, text, link], i) in items"
-            :key="i"
-            link
-            @click="$vuetify.goTo(link)"
-        >
-          <v-list-item-icon class="justify-end">
-            <v-icon style="color: white">{{ icon }}</v-icon>
-          </v-list-item-icon>
-          <v-list-item-content>
-            <v-list-item-title class="subtitile-1">{{
-                text
-              }}
-            </v-list-item-title>
-          </v-list-item-content>
-        </v-list-item>
-      </v-list>
+
     </v-navigation-drawer>
     <v-app-bar
         app
@@ -49,12 +31,12 @@
         class="px-15"
     >
 
-      <v-app-bar-nav-icon
-          @click.stop="drawer = !drawer"
-          class="mr-4"
-          v-if="isXs"
-      />
-      <div v-else>
+<!--      <v-app-bar-nav-icon-->
+<!--          @click.stop="drawer = !drawer"-->
+<!--          class="mr-4"-->
+<!--          v-if="isXs"-->
+<!--      />-->
+      <div >
 
         <v-btn left rounded outlined @click="Faq()">
           <v-icon class="mr-2">

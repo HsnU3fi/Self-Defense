@@ -3,12 +3,14 @@
   <v-app>
 
     <navigation :color="color" :flat="flat"/>
+
     <v-main class="pt-0">
       <home/>
       <about/>
       <lover/>
       <theme/>
     </v-main>
+
     <v-scale-transition>
       <v-btn
           fab

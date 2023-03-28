@@ -7,17 +7,17 @@
         color="#171b34"
 
     >
-      <v-list>
-        <v-list-item>
-          <v-list-item-avatar>
-            <v-img src="@/assets/img/hart.png" max-width="100px"/>
-          </v-list-item-avatar>
-          <v-list-item-content>
+<!--      <v-list>-->
+<!--        <v-list-item>-->
+<!--          <v-list-item-avatar>-->
+<!--            <v-img src="@/assets/img/hart.png" max-width="100px"/>-->
+<!--          </v-list-item-avatar>-->
+<!--          <v-list-item-content>-->
 
-            <v-list-item-title style="color: white;" class="title">LoverTime</v-list-item-title>
-          </v-list-item-content>
-        </v-list-item>
-      </v-list>
+<!--            <v-list-item-title style="color: white;" class="title">LoverTime</v-list-item-title>-->
+<!--          </v-list-item-content>-->
+<!--        </v-list-item>-->
+<!--      </v-list>-->
 
       <v-divider/>
 
@@ -48,21 +48,21 @@
         dark
         class="px-15"
     >
-      <v-img src="@/assets/img/hart.png" max-width="40px"/>
+<!--      <v-img src="@/assets/img/hart.png" max-width="40px"/>-->
 
-      <v-toolbar-title style="font-weight: bold;  font-family: 'Gruppo';font-size: 30px;">
-        LoverTime
-      </v-toolbar-title>
+<!--      <v-toolbar-title style="font-weight: bold;  font-family: 'Gruppo';font-size: 30px;">-->
+<!--        LoverTime-->
+<!--      </v-toolbar-title>-->
       <v-spacer/>
       <v-app-bar-nav-icon
+
           @click.stop="drawer = !drawer"
-          class="mr-4"
           v-if="isXs"
       />
       <div v-else>
 
         <v-btn text @click="$vuetify.goTo('#about')">
-          <span class="mr-2" style="font-weight: bold">معرفی استاد</span>
+          <span class="mr-2" style="font-weight: bold">معرفی استاد مرادی</span>
         </v-btn>
 
         <v-btn text @click="$vuetify.goTo('#theme')">
@@ -96,12 +96,8 @@ export default {
     drawer: null,
     isXs: false,
     items: [
-      ["mdi-account", "ورود", ""],
-      ["mdi-home-outline", "خانه", "#hero"],
-      ["mdi-download-box-outline", "تم ها", "#download"],
-      ["mdi-book", "بلاگ", "#pricing"],
-      ["mdi-book", "سوالات متداول", "/Faq"],
-      ["mdi-information-outline", "درباره ما", "#features"],
+      ["mdi-account-check", "معرفی استاد مرادی", "#about"],
+      ["mdi-video", "ویدیو ها", "#theme"],
     ],
   }),
   props: {

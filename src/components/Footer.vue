@@ -2,21 +2,26 @@
   <v-footer dark padless  >
     <v-card   tile class="secondary white--text text-center">
       <v-card-text>
-        <v-btn
-          v-for="(icon, i) in icons"
-          :key="i"
-          class="mx-4 white--text"
-          :href="icon.link"
-          target="_blank"
-          icon
-        >
-          <v-icon size="24px">{{ icon.text }}</v-icon>
-        </v-btn>
+<!--        <v-btn-->
+<!--          v-for="(icon, i) in icons"-->
+<!--          :key="i"-->
+<!--          class="mx-4 white&#45;&#45;text"-->
+<!--          :href="icon.link"-->
+<!--          target="_blank"-->
+<!--          icon-->
+<!--        >-->
+<!--          <v-icon size="24px">{{ icon.text }}</v-icon>-->
+<!--        </v-btn>-->
       </v-card-text>
+<v-row>
+  <v-card-text class="white--text ">
+    © <a style="text-decoration: none;font-size: 15px" target="_blank" >hassan.u3fi@gmail.com </a>   طراحی توسط
+  </v-card-text>
+  <v-card-text class="white--text pt-0">
+     تمامی حقوقی محفوظ است
+  </v-card-text>
 
-      <v-card-text class="white--text pt-0">
-       با ما در ارتباط باشید
-      </v-card-text>
+</v-row>
       <v-divider></v-divider>
       <v-card-text class="white--text">
         {{ new Date().getFullYear() }}
@@ -37,17 +42,10 @@ export default {
   data: () => ({
     icons: [
       {
-        text: "mdi-facebook",
+        text: "mdi-whatsapp",
         link: "",
       },
-      {
-        text: "mdi-twitter",
-        link: "",
-      },
-      {
-        text: "mdi-linkedin",
-        link: "",
-      },
+
       {
         text: "mdi-instagram",
         link: "",
