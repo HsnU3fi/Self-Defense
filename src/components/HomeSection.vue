@@ -10,9 +10,9 @@
             <v-col cols="12" sm="8" class="white--text text-right">
               <h1 style="font-size: 18px;margin-right: -12px;margin-top: 12px" class=" ">آموزش دفاع شخصی و هنرهای رزمی</h1>
               <h1 class="mb-2" style="font-size: 15px;margin-top: 130px;margin-right: -12px">
-                آموزش خصوصی و عمومی کراوماگا, کیک بوکسینگ, کاراته, موتای و آیکیدو در تمام سنین برای آقایان و بانوان تحت نظر  <span style="font-size:17px "> استاد امیر مرادی</span>
+                آموزش خصوصی و عمومی کراوماگا، کیک بوکسینگ، کاراته، موتای و آیکیدو در تمام سنین برای آقایان و بانوان تحت نظر  <span style="font-size:17px "> استاد امیر مرادی</span>
               </h1>
-              <v-btn rounded  @click="Faq()" large color="secondary" class="mt-10">
+              <v-btn rounded  @click="$vuetify.goTo('#call')" large color="secondary" class="mt-10">
                 <v-icon class="mr-2">
                   mdi-account-circle
                 </v-icon>
@@ -38,7 +38,7 @@
               <h1 style="font-size: 15px">
                 آموزش خصوصی و عمومی کراوماگا, کیک بوکسینگ, کاراته, موتای و آیکیدو در تمام سنین برای آقایان و بانوان تحت نظر  <span style="font-size:20px "> استاد امیر مرادی</span>
               </h1>
-              <v-btn rounded elevation="10"  @click="Faq()" large color="secondary" class="mt-10">
+              <v-btn rounded elevation="10"  @click="$vuetify.goTo('#call')" large color="secondary" class="mt-10">
                 <v-icon class="mr-2">
                   mdi-account-circle
                 </v-icon>

@@ -15,7 +15,7 @@
       </v-card-text>
 <v-row>
   <v-card-text class="white--text ">
-    © <a style="text-decoration: none;font-size: 15px" target="_blank" >hassan.u3fi@gmail.com </a>   طراحی توسط
+    © <a style="text-decoration: none;font-size: 13px" target="_blank" >hassan.u3fi@gmail.com </a>   طراحی توسط
   </v-card-text>
   <v-card-text class="white--text pt-0">
      تمامی حقوقی محفوظ است

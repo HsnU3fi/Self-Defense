@@ -61,17 +61,21 @@
       />
       <div v-else>
 
-        <v-btn text @click="$vuetify.goTo('#about')">
-          <span class="mr-2" style="font-weight: bold">معرفی استاد مرادی</span>
-        </v-btn>
 
         <v-btn text @click="$vuetify.goTo('#theme')">
           <span class="mr-2" style="font-weight: bold">ویدیوها</span>
         </v-btn>
-
-        <v-btn rounded outlined @click="Faq()">
+        <v-btn text @click="$vuetify.goTo('#download')">
+          <span class="mr-2" style="font-weight: bold">آموزش تخصصی کرواماگا</span>
+        </v-btn>
+        <v-btn text @click="$vuetify.goTo('#about')">
+          <span class="mr-2" style="font-weight: bold">معرفی استاد مرادی</span>
+        </v-btn>
+        <v-btn rounded outlined @click="$vuetify.goTo('#call')">
           <span class="mr-2" style="font-weight: bold">ثبت نام</span>
         </v-btn>
+
+
 
       </div>
     </v-app-bar>
@@ -97,7 +101,9 @@ export default {
     isXs: false,
     items: [
       ["mdi-account-check", "معرفی استاد مرادی", "#about"],
+      ["mdi-check", "آموزش تخصصی کرواماگا", "#download"],
       ["mdi-video", "ویدیو ها", "#theme"],
+      ["mdi-account-check", "ثبت نام", "#call"],
     ],
   }),
   props: {

@@ -1,4 +1,4 @@
-<template >
+<template>
 
   <v-app>
 
@@ -7,8 +7,9 @@
     <v-main class="pt-0">
       <home/>
       <about/>
-      <lover/>
+      <learn/>
       <theme/>
+      <call/>
     </v-main>
 
     <v-scale-transition>
@@ -34,7 +35,8 @@
 
 <script>
   import home from "../components/HomeSection";
-  import lover from "../components/LoverSection";
+  import learn from "../components/LoverSection";
+  import call from "../components/callSection";
   import navigation from "../components/Navigation";
   import foote from "../components/Footer";
   import theme from "../components/ThemeSection";
@@ -46,7 +48,8 @@
     components: {
       navigation,
       foote,
-      lover,
+      learn,
+      call,
       home,
       theme,
       about
