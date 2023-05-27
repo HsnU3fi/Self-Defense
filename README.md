@@ -1,4 +1,4 @@
-# weeding-site
+#
 
 ## Project setup
 ```
