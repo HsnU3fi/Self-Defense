@@ -66,7 +66,7 @@
           <span class="mr-2" style="font-weight: bold">ویدیوها</span>
         </v-btn>
         <v-btn text @click="$vuetify.goTo('#download')">
-          <span class="mr-2" style="font-weight: bold">آموزش تخصصی کرواماگا</span>
+          <span class="mr-2" style="font-weight: bold">آموزش تخصصی کراوماگا</span>
         </v-btn>
         <v-btn text @click="$vuetify.goTo('#about')">
           <span class="mr-2" style="font-weight: bold">معرفی استاد مرادی</span>
@@ -101,7 +101,7 @@ export default {
     isXs: false,
     items: [
       ["mdi-account-check", "معرفی استاد مرادی", "#about"],
-      ["mdi-check", "آموزش تخصصی کرواماگا", "#download"],
+      ["mdi-check", "آموزش تخصصی کراوماگا", "#download"],
       ["mdi-video", "ویدیو ها", "#theme"],
       ["mdi-account-check", "ثبت نام", "#call"],
     ],

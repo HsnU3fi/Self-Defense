@@ -2,10 +2,9 @@
   <section id="call">
         <v-row style="margin-top: 30px" justify="center" align="center">
 
-        <span  style="font-size:25px; font-weight: bold;direction: rtl;margin: 30px">
-          جهت ثبت نام و چگونگی برگزاری کلاس های آموزشی از طریق راه های زیر با ما در ارتباط باشید
-          <v-divider/>
-        </span>
+        <h2  style="font-size:25px; font-weight: bold;direction: rtl;margin: 30px">
+          جهت ثبت نام و چگونگی برگزاری کلاس های آموزش ورزش های رزمی و دفاع شخصی از طریق راه های زیر با ما در ارتباط باشید
+        </h2>
         </v-row>
 
         <v-row style="  margin-bottom: 60px;margin: 10px" align="center" justify="center">
@@ -25,7 +24,7 @@
                   :class="{ up: hover }"
               >
                 <v-img
-                    alt="کروماگا"
+                    alt="کراوماگا"
                     :src="feature.img"
                     max-width="100px"
                     height="100"

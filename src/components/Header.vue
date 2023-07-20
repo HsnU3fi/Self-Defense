@@ -42,7 +42,7 @@
           <v-icon class="mr-2">
             mdi-backburger
           </v-icon>
-          <span class="mr-2" style="font-weight: bold">بازگشت</span>
+          <h1 class="mr-2" style="font-weight: bold">بازگشت</h1>
         </v-btn>
 
       </div>

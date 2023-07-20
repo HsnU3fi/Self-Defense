@@ -1,23 +1,32 @@
 <template>
-  <section  id="theme">
-    <v-container  class="fill-height" fluid>
-      <v-row style="margin: 30px" justify="end" align="end">
-        <h1 style="text-align: right; font-weight: bold;font-size: 30px;color: #171b34">ویدیو ها</h1>
-      </v-row>
+  <section id="theme">
+    <v-container class="fill-height" fluid>
 
       <v-row align="center" justify="center">
 
         <v-col
             cols="12"
-            sm="3"
+            sm="8"
             class="text-center"
-            v-for="(feature, i) in features"
-            :key="i"
         >
+          <v-row style="margin-bottom: 30px;margin-right: 10px" justify="end" align="end">
+            <h1 style="text-align: right; font-weight: bold;font-size: 30px;color: #171b34">ویدیو ها</h1>
+          </v-row>
 
-                    <v-card elevation="10" rounded height="400" color="secondary">
-                      <video  style="" height="400" width="300"  controls :src="feature.img" ></video>
-                    </v-card>
+          <v-row justify="center" align="center">
+
+            <v-card style="margin: 20px" elevation="10" rounded height="400" color="secondary">
+              <video  height="400" width="350" controls :src="features[0].img"></video>
+            </v-card>
+
+            <v-card style="margin: 20px" elevation="10" rounded height="400" color="secondary">
+              <video  height="400" width="350" controls :src="features[1].img"></video>
+            </v-card>
+
+            <v-card style="margin: 20px" elevation="10" rounded height="400" color="secondary">
+              <video  height="400" width="350" controls :src="features[2].img"></video>
+            </v-card>
+          </v-row>
 
 
         </v-col>
@@ -25,20 +34,20 @@
       </v-row>
 
     </v-container>
-<!--    <div style="height: 300px"/>-->
+    <!--    <div style="height: 300px"/>-->
 
     <!--    <div class="svg-border-waves text-white" >-->
-<!--      <v-img src="~@/assets/img/borderWavesBlue.svg"/>-->
-<!--    </div>-->
-<!--<v-col cols="14" sm="8">-->
+    <!--      <v-img src="~@/assets/img/borderWavesBlue.svg"/>-->
+    <!--    </div>-->
+    <!--<v-col cols="14" sm="8">-->
 
-<!--</v-col>-->
-<!--    <div class="svg-border-waves">-->
-<!--      <img src="~@/assets/img/wave2.svg" />-->
-<!--    </div>-->
-<!--    <div class="svg-border-waves text-white">-->
-<!--      <v-img src="~@/assets/img/borderWavesBlue.svg"/>-->
-<!--    </div>-->
+    <!--</v-col>-->
+    <!--    <div class="svg-border-waves">-->
+    <!--      <img src="~@/assets/img/wave2.svg" />-->
+    <!--    </div>-->
+    <!--    <div class="svg-border-waves text-white">-->
+    <!--      <v-img src="~@/assets/img/borderWavesBlue.svg"/>-->
+    <!--    </div>-->
 
   </section>
 </template>
@@ -56,8 +65,6 @@ export default {
         'yellow darken-4',
 
       ],
-
-
 
 
       features: [
@@ -166,6 +173,7 @@ export default {
   z-index: 0;
   background-color: #f4f7f5;
 }
+
 .svg-border-waves img {
   position: absolute;
   bottom: 0;

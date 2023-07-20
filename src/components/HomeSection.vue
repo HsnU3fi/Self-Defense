@@ -8,9 +8,9 @@
               <!--              <v-img src="@/assets/img/ill2.svg" class="d-block ml-auto mr-auto" max-width="350px" />-->
             </v-col>
             <v-col cols="12" sm="8" class="white--text text-right">
-              <h1 style="font-size: 18px;margin-right: -12px;margin-top: 12px" class=" ">آموزش دفاع شخصی و هنرهای رزمی</h1>
+              <h1 style="font-size: 18px;margin-right: -12px;margin-top: 12px" >آموزش دفاع شخصی و هنرهای رزمی</h1>
               <h1 class="mb-2" style="font-size: 15px;margin-top: 130px;margin-right: -12px">
-                آموزش خصوصی و عمومی کراوماگا، کیک بوکسینگ، کاراته، موتای و آیکیدو در تمام سنین برای آقایان و بانوان تحت نظر  <span style="font-size:17px "> استاد امیر مرادی</span>
+                آموزش خصوصی و عمومی کراوماگا، کیک بوکسینگ، کاراته، موتای و آیکیدو در تمام سنین برای آقایان و بانوان تحت نظر  <h2 style="font-size:17px "> استاد امیر مرادی</h2>
               </h1>
               <v-btn rounded  @click="$vuetify.goTo('#call')" large color="secondary" class="mt-10">
                 <v-icon class="mr-2">
@@ -36,7 +36,7 @@
             <v-col cols="12" sm="8" class="white--text text-right">
               <h1 style="font-size: 35px;" class="mb-4">آموزش دفاع شخصی و هنرهای رزمی</h1>
               <h1 style="font-size: 15px">
-                آموزش خصوصی و عمومی کراوماگا, کیک بوکسینگ, کاراته, موتای و آیکیدو در تمام سنین برای آقایان و بانوان تحت نظر  <span style="font-size:20px "> استاد امیر مرادی</span>
+                آموزش خصوصی و عمومی کراوماگا, کیک بوکسینگ, کاراته, موتای و آیکیدو در تمام سنین برای آقایان و بانوان تحت نظر  <h2 style="font-size:20px "> استاد امیر مرادی</h2>
               </h1>
               <v-btn rounded elevation="10"  @click="$vuetify.goTo('#call')" large color="secondary" class="mt-10">
                 <v-icon class="mr-2">
