@@ -10,7 +10,7 @@
             class="text-center"
         >
           <v-row style="margin-bottom: 30px;margin-right: 10px" justify="end" align="end">
-            <h1 style="text-align: right; font-weight: bold;font-size: 30px;color: #171b34">ویدیو ها</h1>
+            <h1 style="text-align: right; font-weight: bold;font-size: 30px;color: #171b34">{{ $t('nav.videos') }}</h1>
           </v-row>
 
           <v-row justify="center" align="center">

@@ -15,11 +15,10 @@
       </v-card-text>
 <v-row>
   <v-card-text class="white--text ">
-    © <a style="text-decoration: none;font-size: 13px" target="_blank" >hassan.u3fi@gmail.com </a>   طراحی توسط
+    © <a style="text-decoration: none;font-size: 13px" target="_blank" >hassan.u3fi@gmail.com </a>{{ $t('footer.design_by') }}
   </v-card-text>
   <v-card-text class="white--text pt-0">
-     تمامی حقوقی محفوظ است
-  </v-card-text>
+    {{ $t('footer.cp') }}  </v-card-text>
 
 </v-row>
       <v-divider></v-divider>

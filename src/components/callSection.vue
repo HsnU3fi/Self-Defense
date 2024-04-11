@@ -3,7 +3,7 @@
         <v-row style="margin-top: 30px" justify="center" align="center">
 
         <h2  style="font-size:25px; font-weight: bold;direction: rtl;margin: 30px">
-          جهت ثبت نام و چگونگی برگزاری کلاس های آموزش ورزش های رزمی و دفاع شخصی از طریق راه های زیر با ما در ارتباط باشید
+          {{ $t('call.title') }}
         </h2>
         </v-row>
 
@@ -77,25 +77,25 @@ export default {
       features: [
         {
           img: require("@/assets/img/mobile.jpeg"),
-          title: ": شماره تماس ",
+          title: this.$i18n.t('call.phone_number'),
           text: "09378622812-09192066395",
           color:"green"
         },
         {
           img: require("@/assets/img/chat1.png"),
-          title: ":تلگرام و واتساپ",
+          title: this.$i18n.t('call.tel_whats'),
           text: "09378622812",
           color: "#EC0E00"
         },
         {
           img: require("@/assets/img/email.png"),
-          title: ":ایمیل",
+          title: this.$i18n.t('call.email'),
           text: "amir.moradi.taemeh@gmail.com",
           color: "orange"
         },
         {
           img: require("@/assets/img/insta.jpg"),
-          title: ": آی دی اینستاگرام",
+          title: this.$i18n.t('call.insta'),
           text: "amir.moradi.taemeh",
           color: "orange"
         },

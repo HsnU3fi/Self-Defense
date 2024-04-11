@@ -17,6 +17,7 @@
 }
 
 * {
+
   font-family: 'IranSans', sans-serif;
   font-size: 15px;
   overflow: hidden;

@@ -35,7 +35,7 @@
 
 <script>
   import home from "../components/HomeSection";
-  import learn from "../components/LoverSection";
+  import learn from "../components/EducationSection";
   import call from "../components/callSection";
   import navigation from "../components/Navigation";
   import foote from "../components/Footer";
